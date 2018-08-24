@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Handle Cotters</string>
+    <string name="bienvenido">Welcome</string>
+    <string name="cantidad">Quantity</string>
+    <string name="material">Stuff</string>
+    <string name="cuero">leather</string>
+    <string name="cuerda">Twine</string>
+    <string name="dije">Pendant</string>
+    <string name="martillo">Hammer</string>
+    <string name="ancla">Anchor</string>
+    <string name="tipo">Type</string>
+    <string name="oro">Gold</string>
+    <string name="oro_rosado">Rose Gold</string>
+    <string name="niquel">Nickel</string>
+    <string name="moneda">Currency Type</string>
+    <string name="dolar">Dollar</string>
+    <string name="pesos">Pesos</string>
+    <string name="calcular">Calculate</string>
+</resources>

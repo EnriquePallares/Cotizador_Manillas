@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Cotizador De Manillas</string>
+    <string name="bienvenido">¡Bienvenidos!</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="material">Material</string>
+    <string name="cuero">Cuero</string>
+    <string name="cuerda">Cuerda</string>
+    <string name="dije">Dije</string>
+    <string name="martillo">Martillo</string>
+    <string name="ancla">Ancla</string>
+    <string name="tipo">Tipo</string>
+    <string name="oro">Oro</string>
+    <string name="oro_rosado">Oro Rosado</string>
+    <string name="niquel">Niquel</string>
+    <string name="moneda">Tipo de moneda</string>
+    <string name="dolar">Dolar</string>
+    <string name="pesos">Pesos</string>
+    <string name="calcular">Calcular</string>
+
+    <string-array name="materiales">
+        <item>@string/cuero</item>
+        <item>@string/cuerda</item>
+    </string-array>
+
+    <string-array name="dijes">
+        <item>@string/ancla</item>
+        <item>@string/martillo</item>
+    </string-array>
+
+    <string-array name="tipos">
+        <item>@string/niquel</item>
+        <item>@string/oro</item>
+        <item>@string/oro_rosado</item>
+    </string-array>
+
+    <string-array name="monedas">
+        <item>@string/dolar</item>
+        <item>@string/pesos</item>
+    </string-array>
+</resources>
