@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Handle Cotters</string>
-    <string name="bienvenido">Welcome</string>
+    <string name="bienvenido">¡Welcome!</string>
     <string name="cantidad">Quantity</string>
     <string name="material">Materials</string>
-    <string name="cuero">leather</string>
+    <string name="cuero">Leather</string>
     <string name="cuerda">Twine</string>
     <string name="dije">Pendant</string>
     <string name="martillo">Hammer</string>
@@ -26,4 +26,6 @@
     <string name="errTipo">Please, Select a Type</string>
     <string name="errTipoMoneda">Please, Select Currency Type</string>
     <string name="errCantidad">Please, enter an Amount</string>
+    <string name="plata">Silver</string>
+    <string name="limpiar">Clear Fields</string>
 </resources>

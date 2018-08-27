@@ -33,64 +33,68 @@
         <TextView
             android:id="@+id/txtMaterial"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="20dp"
             android:text="@string/material" />
 
         <Spinner
             android:id="@+id/cmbMateriales"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="38dp" />
 
         <TextView
             android:id="@+id/txtDije"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="20dp"
             android:text="@string/dije" />
 
         <Spinner
             android:id="@+id/cmbDijes"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="38dp" />
 
         <TextView
             android:id="@+id/txtTipo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="20dp"
             android:text="@string/tipo" />
 
         <Spinner
             android:id="@+id/cmbTipos"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="38dp" />
 
         <TextView
             android:id="@+id/txtMoneda"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="20dp"
             android:text="@string/moneda" />
 
         <Spinner
             android:id="@+id/cmbMonedas"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="38dp" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="calcular"
             android:text="@string/calcular" />
 
         <Button
             android:id="@+id/btnLimpiar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="limpiar"
             android:text="@string/limpiar" />
 
         <TextView
             android:id="@+id/txtResultado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="24sp" />
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

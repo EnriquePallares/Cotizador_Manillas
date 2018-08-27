@@ -3,6 +3,7 @@ package com.example.android.cotizador_manillas;
 import android.app.Activity;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -13,10 +14,10 @@ public class principal extends Activity {
 
     private EditText cantidad;
     private TextView res;
-    private Spinner materiales;
-    private Spinner dije;
-    private Spinner tipo;
-    private Spinner tipoMonedas;
+    private Spinner cmbMateriales;
+    private Spinner cmbDije;
+    private Spinner cmbTipo;
+    private Spinner cmbTipoMoneda;
     private Resources recursos;
     private String mat[];
     private String dje[];
@@ -31,10 +32,10 @@ public class principal extends Activity {
         cantidad = findViewById(R.id.txtCantidad);
         res = findViewById(R.id.txtResultado);
 
-        materiales = findViewById(R.id.cmbMateriales);
-        dije = findViewById(R.id.cmbDijes);
-        tipo = findViewById(R.id.cmbTipos);
-        tipoMonedas = findViewById(R.id.cmbMonedas);
+        cmbMateriales = findViewById(R.id.cmbMateriales);
+        cmbDije = findViewById(R.id.cmbDijes);
+        cmbTipo = findViewById(R.id.cmbTipos);
+        cmbTipoMoneda = findViewById(R.id.cmbMonedas);
 
         recursos = this.getResources();
 
@@ -52,18 +53,90 @@ public class principal extends Activity {
         ArrayAdapter<String> adapter4 = new ArrayAdapter<String>
                 (this, android.R.layout.simple_spinner_item, tpoMon);
 
-        materiales.setAdapter(adapter1);
-        dije.setAdapter(adapter2);
-        tipo.setAdapter(adapter3);
-        tipoMonedas.setAdapter(adapter4);
+        cmbMateriales.setAdapter(adapter1);
+        cmbDije.setAdapter(adapter2);
+        cmbTipo.setAdapter(adapter3);
+        cmbTipoMoneda.setAdapter(adapter4);
 
     }
 
+    public void calcular(View v){
+        String material, dije, tipo, tipoMoneda, resultado="";
+        int cant, valUnitario = 0, valFinal = 0;
+
+        if (validar()){
+            cant = Integer.parseInt(cantidad.getText().toString());
+
+            material = cmbMateriales.getSelectedItem().toString();
+            dije = cmbDije.getSelectedItem().toString();
+            tipo = cmbTipo.getSelectedItem().toString();
+            tipoMoneda = cmbTipoMoneda.getSelectedItem().toString();
+
+            if(material.equals(getResources().getString(R.string.cuero)) && dije.equals(getResources().getString(R.string.martillo)) && tipo.equals(getResources().getString(R.string.oro))){
+                valUnitario = 100;
+            }
+            if(material.equals(getResources().getString(R.string.cuero)) && dije.equals(getResources().getString(R.string.martillo)) && tipo.equals(getResources().getString(R.string.oro_rosado))){
+                valUnitario = 100;
+            }
+            if(material.equals(getResources().getString(R.string.cuero)) && dije.equals(getResources().getString(R.string.martillo)) && tipo.equals(getResources().getString(R.string.plata))){
+                valUnitario = 80;
+            }
+            if(material.equals(getResources().getString(R.string.cuero)) && dije.equals(getResources().getString(R.string.martillo)) && tipo.equals(getResources().getString(R.string.niquel))){
+                valUnitario = 70;
+            }
+            if(material.equals(getResources().getString(R.string.cuero)) && dije.equals(getResources().getString(R.string.ancla)) && tipo.equals(getResources().getString(R.string.oro))){
+                valUnitario = 120;
+            }
+            if(material.equals(getResources().getString(R.string.cuero)) && dije.equals(getResources().getString(R.string.ancla)) && tipo.equals(getResources().getString(R.string.oro_rosado))){
+                valUnitario = 120;
+            }
+            if(material.equals(getResources().getString(R.string.cuero)) && dije.equals(getResources().getString(R.string.ancla)) && tipo.equals(getResources().getString(R.string.plata))){
+                valUnitario = 100;
+            }
+            if(material.equals(getResources().getString(R.string.cuero)) && dije.equals(getResources().getString(R.string.ancla)) && tipo.equals(getResources().getString(R.string.niquel))){
+                valUnitario = 90;
+            }
+            if(material.equals(getResources().getString(R.string.cuerda)) && dije.equals(getResources().getString(R.string.martillo)) && tipo.equals(getResources().getString(R.string.oro))){
+                valUnitario = 90;
+            }
+            if(material.equals(getResources().getString(R.string.cuerda)) && dije.equals(getResources().getString(R.string.martillo)) && tipo.equals(getResources().getString(R.string.oro_rosado))){
+                valUnitario = 90;
+            }
+            if(material.equals(getResources().getString(R.string.cuerda)) && dije.equals(getResources().getString(R.string.martillo)) && tipo.equals(getResources().getString(R.string.plata))){
+                valUnitario = 70;
+            }
+            if(material.equals(getResources().getString(R.string.cuerda)) && dije.equals(getResources().getString(R.string.martillo)) && tipo.equals(getResources().getString(R.string.niquel))){
+                valUnitario = 50;
+            }
+            if(material.equals(getResources().getString(R.string.cuerda)) && dije.equals(getResources().getString(R.string.ancla)) && tipo.equals(getResources().getString(R.string.oro))){
+                valUnitario = 110;
+            }
+            if(material.equals(getResources().getString(R.string.cuerda)) && dije.equals(getResources().getString(R.string.ancla)) && tipo.equals(getResources().getString(R.string.oro_rosado))){
+                valUnitario = 110;
+            }
+            if(material.equals(getResources().getString(R.string.cuerda)) && dije.equals(getResources().getString(R.string.ancla)) && tipo.equals(getResources().getString(R.string.plata))){
+                valUnitario = 90;
+            }
+            if(material.equals(getResources().getString(R.string.cuerda)) && dije.equals(getResources().getString(R.string.ancla)) && tipo.equals(getResources().getString(R.string.niquel))){
+                valUnitario = 80;
+            }
+            if(tipoMoneda.equals(getResources().getString(R.string.dolar))){
+                valFinal = valUnitario*cant;
+            }
+            if(tipoMoneda.equals(getResources().getString(R.string.pesos))){
+                valFinal = valUnitario*cant*3200;
+            }
+
+            resultado = resultado+valFinal;
+            res.setText("$" + resultado);
+        }
+    }
+
     public boolean validar(){
-        int mt = materiales.getSelectedItemPosition();
-        int dj = dije.getSelectedItemPosition();
-        int tp = tipo.getSelectedItemPosition();
-        int tpM = tipoMonedas.getSelectedItemPosition();
+        int mt = cmbMateriales.getSelectedItemPosition();
+        int dj = cmbDije.getSelectedItemPosition();
+        int tp = cmbTipo.getSelectedItemPosition();
+        int tpM = cmbTipoMoneda.getSelectedItemPosition();
 
         if (cantidad.getText().toString().isEmpty()){
             cantidad.setError(recursos.getString(R.string.errCantidad));
@@ -91,5 +164,15 @@ public class principal extends Activity {
             return false;
         }
         return true;
+    }
+
+    public void limpiar(View v){
+        cantidad.setText("");
+        cantidad.requestFocus();
+        res.setText("");
+        cmbMateriales.setSelection(0);
+        cmbDije.setSelection(0);
+        cmbTipo.setSelection(0);
+        cmbTipoMoneda.setSelection(0);
     }
 }

@@ -19,6 +19,7 @@
     <string name="oro">Oro</string>
     <string name="oro_rosado">Oro Rosado</string>
     <string name="niquel">Niquel</string>
+    <string name="plata">Plata</string>
     <string name="moneda">Tipo de moneda</string>
     <string name="selecTipoMoneda">Seleccione el Tipo de Moneda</string>
     <string name="errTipoMoneda">Por favor, seleccione un Tipo de Moneda</string>
@@ -44,6 +45,7 @@
         <item>@string/niquel</item>
         <item>@string/oro</item>
         <item>@string/oro_rosado</item>
+        <item>@string/plata</item>
     </string-array>
 
     <string-array name="monedas">
