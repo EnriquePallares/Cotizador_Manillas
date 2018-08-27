@@ -3,7 +3,7 @@
     <string name="app_name">Handle Cotters</string>
     <string name="bienvenido">Welcome</string>
     <string name="cantidad">Quantity</string>
-    <string name="material">Stuff</string>
+    <string name="material">Materials</string>
     <string name="cuero">leather</string>
     <string name="cuerda">Twine</string>
     <string name="dije">Pendant</string>
@@ -17,4 +17,13 @@
     <string name="dolar">Dollar</string>
     <string name="pesos">Pesos</string>
     <string name="calcular">Calculate</string>
+    <string name="selecDije">Select Pendant</string>
+    <string name="selecMaterial">Select Materials</string>
+    <string name="selecTipo">Select Type</string>
+    <string name="selecTipoMoneda">Select Currency Type</string>
+    <string name="errMaterial">Please, Select a Materials</string>
+    <string name="errDije">Please, Select a Pendant</string>
+    <string name="errTipo">Please, Select a Type</string>
+    <string name="errTipoMoneda">Please, Select Currency Type</string>
+    <string name="errCantidad">Please, enter an Amount</string>
 </resources>
