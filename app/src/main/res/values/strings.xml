@@ -36,16 +36,16 @@
 
     <string-array name="dijes">
         <item>@string/selecDije</item>
-        <item>@string/ancla</item>
         <item>@string/martillo</item>
+        <item>@string/ancla</item>
     </string-array>
 
     <string-array name="tipos">
         <item>@string/selecTipo</item>
-        <item>@string/niquel</item>
         <item>@string/oro</item>
         <item>@string/oro_rosado</item>
         <item>@string/plata</item>
+        <item>@string/niquel</item>
     </string-array>
 
     <string-array name="monedas">
