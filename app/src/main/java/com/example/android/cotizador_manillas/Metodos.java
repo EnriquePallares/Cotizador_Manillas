@@ -104,7 +104,7 @@ public class Metodos {
         return valorU;
     }
 
-    public static int cambiarMoneda(int pesos){
-        return pesos * 3200;
+    public static int cambiarMoneda(int resultado){
+        return resultado * 3200;
     }
 }
