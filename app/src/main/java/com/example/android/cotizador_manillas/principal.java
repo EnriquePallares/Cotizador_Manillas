@@ -70,16 +70,7 @@ public class principal extends Activity {
             cbTipos = cmbTipo.getSelectedItemPosition();
             cbTipoMoneda = cmbTipoMoneda.getSelectedItemPosition();
 
-            switch (cbMateriales){
-                case 1: {
-                    resultado = Metodos.totalCompra(cant, cbMateriales, cbDijes, cbTipos);
-                    break;
-                }
-                case 2: {
-                    resultado = Metodos.totalCompra(cant, cbMateriales, cbDijes, cbTipos);
-                    break;
-                }
-            }
+            resultado = Metodos.totalCompra(cant, cbMateriales, cbDijes, cbTipos);
 
             switch (cbTipoMoneda){
                 case 1: {

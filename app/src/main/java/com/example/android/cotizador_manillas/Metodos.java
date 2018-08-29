@@ -105,6 +105,8 @@ public class Metodos {
     }
 
     public static int cambiarMoneda(int resultado){
+
         return resultado * 3200;
+
     }
 }
