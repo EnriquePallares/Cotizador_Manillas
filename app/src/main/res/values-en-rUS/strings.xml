@@ -28,4 +28,5 @@
     <string name="errCantidad">Please, enter an Amount</string>
     <string name="plata">Silver</string>
     <string name="limpiar">Clear Fields</string>
+    <string name="errCero">Please, enter an amount greater than zero</string>
 </resources>

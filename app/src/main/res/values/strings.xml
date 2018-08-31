@@ -2,6 +2,7 @@
     <string name="app_name">Cotizador De Manillas</string>
     <string name="bienvenido">¡Bienvenidos!</string>
     <string name="cantidad">Cantidad</string>
+    <string name="errCero">Por favor, digita una cantidad mayor a 0</string>
     <string name="errCantidad">Por favor, digite una cantidad</string>
     <string name="material">Material</string>
     <string name="selecMaterial">Seleccione el Material</string>

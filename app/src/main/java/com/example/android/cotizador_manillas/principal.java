@@ -95,6 +95,11 @@ public class principal extends Activity {
             cantidad.requestFocus();
             return false;
         }
+        if (Integer.parseInt(cantidad.getText().toString())==0){
+            cantidad.setError(recursos.getString(R.string.errCero));
+            cantidad.requestFocus();
+            return false;
+        }
         if (mt == 0){
             Toast.makeText(this, recursos.getString(R.string.errMaterial),
                     Toast.LENGTH_SHORT).show();
